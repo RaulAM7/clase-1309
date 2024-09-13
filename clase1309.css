@@ -1,0 +1,14 @@
+h1 {
+    color: blue;
+}
+
+
+h2 {
+    color: red;
+}
+
+.imgArriba img { 
+    height: 50vh;
+    width: 70vw;
+    display: block;
+}

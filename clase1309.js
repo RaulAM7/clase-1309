@@ -57,9 +57,9 @@ const datosReal = {
     'peso': 99,
 }
 
-console.log(datosReal.peso)
+//console.log(datosReal.peso)
 
-console.log(datosReal)
+//console.log(datosReal)
 
 
 
@@ -78,7 +78,7 @@ datosReal.direccion = {
 
 datosReal.notasHistory = [7, 8, 9, 1, 6, 0]
 
-console.log(datosReal)
+//onsole.log(datosReal)
 
 
 /*
@@ -89,15 +89,13 @@ BRACKET NOTATION JS OBJECTS
 
 datosReal[999999] = 555
 
-console.log('Con esta bracket notation podemos meter claves sin problema: ' + datosReal)
+//console.log('Con esta bracket notation podemos meter claves sin problema: ' + datosReal)
 
-console.log()
-
-
-console.log(datosReal['htmlNota'])
+//console.log()
 
 
-console.log(datosReal['direccion']['calle'])
+//console.log(datosReal['htmlNota'])
+//console.log(datosReal['direccion']['calle'])
 
 
 let deporte = 'Futbol'
@@ -108,7 +106,7 @@ let nivel = 'alto'
 datosReal.deporte = deporte 
 datosReal.nivel = nivel
 
-console.log(datosReal)
+//console.log(datosReal)
 
 /*
 DERIVADA DE BRACKET NOTATION -> DYNAMIC PROPPERTIES
@@ -133,7 +131,7 @@ delete datosReal.deporte
 
 datosReal.update = 'Hemos borrado deporte'
 
-console.log(datosReal)
+//console.log(datosReal)
 
 
 
@@ -154,3 +152,72 @@ CREAR UN NUEVO OBJETO EN UN ARR CON MULTIPLES OBJETOS DENTRO   ->   METER UNA NU
 
 */
 
+
+const contact = {
+
+    name: "Harry Potter",
+    phone: "333",
+    email: "harr@gmail.com",
+
+}
+
+//console.log(contact)
+
+
+/*
+
+ACCEDIENDO A LAS PROPIEDADES DE UN OBJETO
+
+
+    - DOT NOTATION -> objeto.clave -> claveValor
+
+
+*/
+
+console.log('Estamos accediendo con objeto.clave a esta propiedad cuyo valor es: ' + contact.name)
+
+contact.nuevaClave0 = 'nuevoValor0'
+
+console.log('Este es el objeto modificado añadiendo la nuevaClave0 : ')
+
+console.log(contact)
+
+contact.objetoNuevasClaves = {
+
+    nuevaClave1: 'nuevoValor1',
+    nuevaClave2: 'nuevoValor2',
+    nuevaClave3: 'nuevoValor3',
+
+}
+
+
+console.log('Este es el objeto modificado añadiendo un objeto con las nuevas multiples Claves gracias a la DOT NOTATION:  ')
+
+console.log(contact)
+
+
+
+/*
+
+ACCEDIENDO A LAS PROPIEDADES DE OBJETOS
+
+        
+        BRACKET NOTATION 
+
+        - Nos permite definir nuevos pares de clave: valor;  
+
+
+
+*/
+
+const surname = 'surnameClave'
+
+contact[surname] = 'surnameValor'
+
+console.log('Este es el nuevo objeto creando un nuevo par KEY: VALOR gracias a la BRACKET NOTATION: ')
+console.log(contact)
+
+contact['numeroNovios'] =  27
+
+console.log('Este es el nuevo objeto creando un nuevo par KEY: VALOR con la BRACKET NOTATION resumida: ')
+console.log(contact)
